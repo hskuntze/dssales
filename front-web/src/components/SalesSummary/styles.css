@@ -1,0 +1,32 @@
+.sales-summary-container {
+  width: 440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sales-summary-card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sales-summary-card:nth-of-type(1),
+.sales-summary-card:nth-of-type(2) {
+  margin-bottom: 40px;
+}
+
+.sales-summary-card-value {
+  color: var(--white-color);
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.sales-summary-card-label {
+  color: var(--grey-light-85-color);
+  font-size: 16px;
+}
