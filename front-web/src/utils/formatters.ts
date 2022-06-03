@@ -1,4 +1,4 @@
-export const FormatPrice = (price: number) => {
+export const formatPrice = (price: number) => {
   return new Intl.NumberFormat('pt-BR', {
     minimumFractionDigits: 2,
     style: 'currency',
@@ -6,6 +6,12 @@ export const FormatPrice = (price: number) => {
   }).format(price);
 };
 
-export const FormatDate = (date: Date) => {
+export const formatDate = (date: Date) => {
   return date.toLocaleDateString();
+};
+
+export const formatDateToServer = (date?: Date) => {
+  if (date) {
+    return date.toISOString().substring(0, 10);
+  }
 };
