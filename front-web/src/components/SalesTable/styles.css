@@ -18,10 +18,17 @@
   height: 55px;
 }
 
+.sales-table thead th:first-of-type {
+  padding-left: 30px;
+}
+
+.sales-table tbody td:first-of-type {
+  padding-left: 30px;
+}
+
 .sales-table tbody td {
   height: 55px;
   border-top: 1px solid var(--grey-light-85-color);
-  font-size: 18px;
   transition: background 0.7s;
 }
 
